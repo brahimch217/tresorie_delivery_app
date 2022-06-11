@@ -122,8 +122,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         if (confirmpasswordController.text.isNotEmpty &&
             emailController.text.isNotEmpty &&
             nameController.text.isNotEmpty &&
-            phoneController.text.isNotEmpty &&
-            locationController.text.isNotEmpty) {
+            phoneController.text.isNotEmpty) {
           //start uploading image
           showDialog(
             context: context,
@@ -217,11 +216,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
         "sellerName": nameController.text.trim(),
         "sellerAvatarUrl": sellerImageUrl,
         "phone": phoneController.text.trim(),
-        "address": completeAddress,
+        // "address": completeAddress,
         "status": "approved",
         "earnings": 0.0,
-        "lat": position!.latitude,
-        "lng": position!.longitude,
+        // "lat": position!.latitude,
+        // "lng": position!.longitude,
       },
     );
 
@@ -348,7 +347,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         Center(
                           child: IconButton(
                             onPressed: () {
-                              getCurrenLocation();
+                              // getCurrenLocation();
                             },
                             icon: const Icon(
                               Icons.location_on,

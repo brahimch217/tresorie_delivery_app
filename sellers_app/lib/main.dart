@@ -10,11 +10,12 @@ Future<void> main() async {
 
   sharedPreferences = await SharedPreferences.getInstance();
   await Firebase.initializeApp(
-      options: FirebaseOptions(
-          apiKey: "AIzaSyAQl58cBglJkCwtDwXe4rvV_zzAwpsL7sI",
-          appId: "1:955016282278:web:74c84bdf7387f845afb467",
-          messagingSenderId: "955016282278",
-          projectId: "tresorerie-50dc9"));
+      options: const FirebaseOptions(
+          apiKey: "AIzaSyDnpzELhs49KijDxz1UJ4ukA2gbmNnUl5w",
+          appId: "1:21956223765:web:b5d4db24a561804d077f1c",
+          messagingSenderId: "21956223765",
+          projectId: "tresorie-d8c94",
+          storageBucket: "tresorie-d8c94.appspot.com"));
 
   runApp(const MyApp());
 }
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.amber,
       ),
-      home: const HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }

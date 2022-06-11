@@ -225,9 +225,7 @@ class _MenusUploadScreenState extends State<MenusUploadScreen> {
         ),
         actions: [
           ElevatedButton(
-            onPressed:
-                //we check if uploading is null (otherwise if user clicks more than 1 time it will upload more than 1 time)
-                uploading ? null : () => validateUploadForm(),
+            onPressed: uploading ? null : () => validateUploadForm(),
             child: Text(
               "Add".toUpperCase(),
               style: GoogleFonts.lato(
